@@ -55,6 +55,7 @@ const App = () => {
       {recipes.map(recipe => (
         // API のレシピからタイトル・カロリー・画像を取得
         // keyがないとエラーが発生する
+        <div className="recipes">
         <Recipe
           key={recipe.recipe.label}
           title={recipe.recipe.label}
@@ -62,6 +63,7 @@ const App = () => {
           image={recipe.recipe.image}
           ingredients={recipe.recipe.ingredients}>
           </Recipe>
+          </div>
 
       ))}
 
